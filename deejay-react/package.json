@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "react": "^16.1.1",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "spotify-web-api-js": "^0.22.1"
   },
   "scripts": {
     "start": "react-scripts start",
