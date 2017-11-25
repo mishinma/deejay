@@ -14,7 +14,7 @@ const Track = (props) => {
         <ListGroupItem
             href="#"
             header={props.name}
-            onClick={() => playSound(props.preview_url)}
+            onClick={() => props.onClick()}
         >
             {artist_name}
         </ListGroupItem>

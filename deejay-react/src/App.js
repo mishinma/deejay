@@ -1,55 +1,32 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { getRecommendedTracks, getCurrentUserProfile } from './helpers/spotify';
-import TrackList from './components/TrackList';
-import UserList from './components/UserList';
+import Room from './components/Room';
+import Home from './components/Home';
+
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      artists_seed: [],
-      recommendations: [],
-      users: []
-    }
-  }
-
-  componentDidMount() {
-    getRecommendedTracks({}, this.props.token)
-      .then(tracks => {
-        this.setState({
-          ...this.state,
-          recommendations: tracks
-        });
-      })
-      .catch(err => {
-        console.error(err);
-      });
-    
-    getCurrentUserProfile(this.props.token)
-      .then(user => {
-        this.setState({
-          ...this.state,
-          users: [...this.state.users, user]
-        });
-      })
-      .catch(err => {
-        console.error(err);
-      });
-  }
-
+  
   render() {
+    const authEndpoint = 'https://accounts.spotify.com/authorize';
+    const scopes = ['streaming', 'user-modify-playback-state', 'user-read-birthdate', 'user-read-email', 'user-read-private', 'user-top-read'];
+    
+    let content;
+    
+    // If there is no token, redirect to Spotify authorization
+    if (this.props.token) {
+      content = <Room token={this.props.token} />
+    } else {
+      content = <Home authEndpoint={authEndpoint} scopes={scopes} />
+    }
+
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to DeeJay</h1>
         </header>
-        <UserList users={this.state.users} />
-        <TrackList tracks={this.state.recommendations} />
+        {content}
       </div>
     );
   }

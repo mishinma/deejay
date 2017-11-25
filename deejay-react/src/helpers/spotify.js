@@ -59,3 +59,29 @@ export const getCurrentUserProfile = (token) => {
     return json;
   })
 };
+
+export const playSongs = (token, options = {}) => {
+  return fetch(`https://api.spotify.com/v1/me/player/play`, {
+    method: 'put',
+    headers: { 'Authorization': `Bearer ${token}` },
+    body: JSON.stringify({
+      ...options
+    })
+  }).then(res => {
+    console.log('play', res);
+    return res.text();
+  })
+}
+
+export const transferPlayback = (token, options={}) => {
+  return fetch(`https://api.spotify.com/v1/me/player`, {
+    method: 'put',
+    headers: { 'Authorization': `Bearer ${token}` },
+    body: JSON.stringify({
+      ...options
+    })
+  }).then(res => {
+    console.log('transfer', res);
+    return res.text();
+  })
+}
