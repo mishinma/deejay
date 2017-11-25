@@ -5,9 +5,22 @@
 const express = require('express');
 const fetch = require("node-fetch");
 const db = require('./db');
+const cors = require('cors');
+
+// URLS
+const authEndpoint = 'https://accounts.spotify.com/authorize';
+// Replace with your app's client ID, redirect URI and desired scopes
+const clientId = '3cc774f2f6c04a10a6919879657320c7';
+const scopes = ['user-top-read'];
+
+// If there is no token, redirect to Spotify authorization
+// if (!_token) {
+//   window.location = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
+// }
+
 
 var app = express();
-
+app.use(cors());
 
 
 /**
@@ -23,6 +36,11 @@ const generateRandomString = function(length) {
     text += possible.charAt(Math.floor(Math.random() * possible.length));
   }
   return text;
+};
+
+const createRoomShareableUrl = function(roomURL) {
+    const redirectUri = `https://f12f4b9a.ngrok.io/room/${roomURL}/join`;
+    return `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
 };
 
 app.use(express.static(__dirname + '/'));
@@ -89,13 +107,28 @@ const getTopTracks = (token) => {
 };
 
 
+app.get("/room/:id")
+    // generate share link
+    // query room seed_genres
+    // call to getRecommendations(roomSeedGenres)
 
-app.post("/room", (request, result, next) => {
+
+app.get("/room/:id/refresh")
+    // generate share link
+    // query room seed_genres
+    // call to getRecommendations(roomSeedGenres)
+
+
+
+app.get("/room/create", (request, result, next) => {
 
     const token = request.query.token;
+
     spotifyApi.setAccessToken(request.query.token);
     // console.log(token);
     const roomUrl = generateRandomString(50);
+    const roomShareableUrl = createRoomShareableUrl(roomUrl);
+    console.log(roomShareableUrl);
 
     const insertUserStm = 'INSERT INTO users (roomid, top_artists, top_tracks) VALUES ($1,  $2::json, $3::json)';
     const insertRoomStm = 'INSERT INTO rooms (url) VALUES ($1::text) RETURNING id';
@@ -105,13 +138,6 @@ app.post("/room", (request, result, next) => {
     .then(res => {
             return res.rows[0].id;
     });
-
-    // spotifyApi.getMe()
-    //   .then(data => {
-    //     // const userId = data.body.id;
-    //     // console.log('Some information about the authenticated user', userId);
-    //     return  data.body.id;
-    // }),
 
     const promises = [
         roomIdPromise,
@@ -123,10 +149,16 @@ app.post("/room", (request, result, next) => {
         const roomId = data[0];
         const topArtists = data[1];
         const topTracks = data[2];
-        return db.query(insertUserStm, [roomId, topArtists, topTracks]);
-    }).then(res => {
-        console.log(res);
-        result.status(201).send();
+        db.query(insertUserStm, [roomId, topArtists, topTracks])
+        .then(res => {
+            console.log(res);
+            result.json({
+                'roomShareableUrl': roomShareableUrl,
+                'seedArtists': topArtists
+        });
+    });
+        // result.redirect(`https://f12f4b9a.ngrok.io?token=${token}`)
+        // redirect to /room/13asdfas452
     }).catch(err => {
         console.error(err);
     })
