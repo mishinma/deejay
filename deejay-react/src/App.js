@@ -24,26 +24,29 @@ class App extends Component {
       return response.json();
     })
     .then(json => {
-      return json.items.map(artist => {
+
+      return json.items 
+        ? json.items.map(artist => {
         return <li key={ artist.uri }><a href={ artist.uri }>{ artist.name }</a></li>;
-      });
+        })
+        : []
     })
     .catch(err => {
       console.error(err);
     });
   }
 
-  render() {
-    if(this.state.artists.length === 0) {
-      this.getTopArtists()
+  componentDidMount() {
+    this.getTopArtists()
       .then(res => {
         this.setState({
           ...this.state,
           artists: res
-        })
+        });
       });
-    }
+  }
 
+  render() {
     return (
       <div className="App">
         <header className="App-header">
