@@ -22,7 +22,6 @@ window.location.hash = '';
 // Set token
 let _token = hash.access_token;
 
-
 ReactDOM.render(<App token={_token} />, document.getElementById('root'));
 
 registerServiceWorker();

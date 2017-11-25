@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { getRecommendedTracks, getCurrentUserProfile } from '../helpers/spotify';
-import { registerPlayer } from '../helpers/utils'
+import { getRecommendations, getCurrentUserProfile } from '../helpers/spotify';
+import { registerPlayer, createRoom } from '../helpers/utils'
 import TrackList from './TrackList';
 import UserList from './UserList';
 // const SpotifyWebApi = require('spotify-web-api-node');
@@ -16,20 +16,28 @@ class Room extends Component {
       artists_seed: [],
       recommendations: [],
       users: [],
+      link: '',
       player,
     }
   }
 
   componentDidMount() {
-    getRecommendedTracks({}, this.props.token)
-      .then(tracks => {
-        this.setState({
-          ...this.state,
-          recommendations: tracks
-        });
+    createRoom(this.props.token)
+      .then(json => {
+          console.log(json);
+          getRecommendations({
+              seed_artists: json.seedArtists.items.map(artist => artist.id).slice(0,5)
+          }, this.props.token)
+          .then(tracks => {
+            this.setState({
+                ...this.state,
+                recommendations: tracks,
+                link: json.roomShareableUrl
+            });
+        })
       })
       .catch(err => {
-        console.error(err);
+          console.error(err);
       });
     
     getCurrentUserProfile(this.props.token)
@@ -44,7 +52,6 @@ class Room extends Component {
       });
     
     registerPlayer(this.props.token, this.state.spotifyApi, this.state.player);
-    console.log(this.state.player);
   }
 
   render() {
