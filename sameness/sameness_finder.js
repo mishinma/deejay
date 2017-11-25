@@ -1,22 +1,4 @@
 // Create seeds
-
-var artists1 = ['TheKooks', 'TheFratellis', 'FranzFerdinand', 'BonJovi', 'TheBeatles'];
-var artists2 = ['AmmyWinehouse', 'TheFratellis', 'TheClash', 'BonJovi'];
-var artists3 = ['TheFratellis', 'BonJovi', 'TheBeatles'];
-var artists4 = ['Chopin', 'TheFratellis', 'BonJovi', 'TheBeatles'];
-var artists5 = ['TheFratellis', 'Chopin', 'BonJovi'];
-
-var song1 = ['Song1', 'Song6', 'Song4', 'Song1', 'Song5'];
-var song2 = ['Song7', 'Song1', 'Song4', 'Song2'];
-var song3 = ['Song5', 'Song1', 'Song3'];
-var song4 = ['Song5', 'Song3', 'Song1', 'Song2'];
-var song5 = ['Song3', 'Song7', 'Song2'];
-
-// Merge arrays of artists into one array
-var merged_top_artists = artists1.concat(artists2, artists3, artists4, artists5);
-var merged_top_songs = song1.concat(song2, song3, song4, song5);
-// -------------------------------------------------------------------------------------------
-
 // Count popularity of artists amond friends
 
 // Create frequency dict
@@ -25,7 +7,6 @@ function CountFreq(arr){
     for (var i = 0, j = arr.length; i < j; i++) {
        result[arr[i]] = (result[arr[i]] || 0) + 1;
     }
-    // console.log(result);
   return result;
 }
 
@@ -44,6 +25,7 @@ function GetTop(merged_top){
         return second[1] - first[1];
     });
 
+    console.log('SORTED', items) 
     var five = items.slice(0, 5);
     // Create a new array with only the first 5 items
 
@@ -55,12 +37,58 @@ function GetTop(merged_top){
     return five_clean;  
 }
 
+// Recieve recommended songs based on seeds
+
+function GetArtists(filename){
+    var result = []
+    var dict = require(filename);
+    // console.log(misha.items)
+    for (let item of dict.items) {
+        result.push(item.name);
+        console.log(item.name);
+    }
+    return result
+}
+
+function GetGenres(filename){
+    var result = []
+    var dict = require(filename);
+    for (let item of dict.items) {
+        for (let item2 of item.genres) {
+            result.push(item2)
+        }
+    }
+    console.log(result);
+    return result
+}    
+
+// ----------------------------------------------------
+var misha = GetGenres('./misha.json')
+console.log()
+var lena = GetGenres('./lena.json')
+console.log()
+var max = GetGenres('./max.json')
+console.log()
+var dicle = GetGenres('./dicle.json')
+
+var merged_top_genres = misha.concat(lena, max, dicle);
+var five_genres = GetTop(merged_top_genres);
+
+// ----------------------------------------------------
+var misha = GetArtists('./misha.json')
+console.log()
+var lena = GetArtists('./lena.json')
+console.log()
+var max = GetArtists('./max.json')
+console.log()
+var dicle = GetArtists('./dicle.json')
+
+var merged_top_artists = misha.concat(lena, max, dicle);
 var five_artists = GetTop(merged_top_artists);
-var five_songs = GetTop(merged_top_songs);
 
-// For top-artists get list genres artist is associated with https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/ 
-// Implement GetTopArtists for genres
 // Merge all together
-
-var seeds = five_artists.concat(five_songs);
+var seeds = five_artists.concat(five_genres);
 console.log('Seeds', seeds)
+
+
+// + add one favourite song of eaveryone of us to the final playlist
