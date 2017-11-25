@@ -1,6 +1,4 @@
-// Get 20 top-artists from everyone and find common
-// For each of 20 artists find 5 similar, merge altogether
-// Randomize
+// Create seeds
 
 var artists1 = ['TheKooks', 'TheFratellis', 'FranzFerdinand', 'BonJovi', 'TheBeatles'];
 var artists2 = ['AmmyWinehouse', 'TheFratellis', 'TheClash', 'BonJovi'];
