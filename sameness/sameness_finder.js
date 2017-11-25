@@ -39,7 +39,7 @@ function GetTop(merged_top){
 
 // Recieve recommended songs based on seeds
 
-function GetArtists(filename){
+function GetArtistsOrTracks(filename){
     var result = []
     var dict = require(filename);
     // console.log(misha.items)
@@ -75,20 +75,37 @@ var merged_top_genres = misha.concat(lena, max, dicle);
 var five_genres = GetTop(merged_top_genres);
 
 // ----------------------------------------------------
-var misha = GetArtists('./misha.json')
+var misha = GetArtistsOrTracks('./misha.json')
 console.log()
-var lena = GetArtists('./lena.json')
+var lena = GetArtistsOrTracks('./lena.json')
 console.log()
-var max = GetArtists('./max.json')
+var max = GetArtistsOrTracks('./max.json')
 console.log()
-var dicle = GetArtists('./dicle.json')
+var dicle = GetArtistsOrTracks('./dicle.json')
 
 var merged_top_artists = misha.concat(lena, max, dicle);
 var five_artists = GetTop(merged_top_artists);
 
+// ----------------------------------------------------
+var misha = GetArtistsOrTracks('./misha_tracks.json')
+console.log()
+var lena = GetArtistsOrTracks('./lena_tracks.json')
+
+var merged_top_tracks = misha.concat(lena, max, dicle);
+var five_tracks = GetTop(merged_top_tracks);
+
+// ----------------------------------------------------
+
 // Merge all together
-var seeds = five_artists.concat(five_genres);
+var seeds = five_artists.concat(five_genres, five_tracks);
 console.log('Seeds', seeds)
 
+// Return string of ids
 
-// + add one favourite song of eaveryone of us to the final playlist
+// Send seeds to Spotify GetRecommendations, recieve playlist
+// Add one favourite song of eaveryone of us to the final playlist
+// Shuffle
+
+// + when getting recommendations, give an option to adjust min_popularity, energy, max_tempo:
+// spotifyApi.getRecommendations({min_energy : 0.4, market : 'ES', seed_artists : '6mfK6Q2tzLMEchAr0e9Uzu,4DYFVNKZ1uixa6SQTvzQwJ', limit : 5, min_popularity : 50})
+  
