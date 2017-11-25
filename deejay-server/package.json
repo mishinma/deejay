@@ -8,6 +8,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.15.2",
     "node-fetch": "^1.7.3",
     "pg": "^7.4.0",
