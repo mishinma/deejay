@@ -39,17 +39,19 @@ function GetTop(merged_top){
 
 // Recieve recommended songs based on seeds
 
+// Parse json and get ids of artists / tracks
 function GetArtistsOrTracks(filename){
     var result = []
     var dict = require(filename);
     // console.log(misha.items)
     for (let item of dict.items) {
-        result.push(item.name);
+        result.push(item.id);
         console.log(item.name);
     }
     return result
 }
 
+// Parse json and get genres
 function GetGenres(filename){
     var result = []
     var dict = require(filename);
@@ -100,7 +102,11 @@ var five_tracks = GetTop(merged_top_tracks);
 var seeds = five_artists.concat(five_genres, five_tracks);
 console.log('Seeds', seeds)
 
-// Return string of ids
+var result_seeds = {  'seed_artists': five_artists.toString(),
+                'seed_tracks': five_tracks.toString(),
+                'seed_genres': five_genres.toString(),
+};
+console.log('result', result_seeds)
 
 // Send seeds to Spotify GetRecommendations, recieve playlist
 // Add one favourite song of eaveryone of us to the final playlist
