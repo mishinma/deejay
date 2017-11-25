@@ -7,7 +7,7 @@ console.log(typeof sameness.GetGenre);
 console.log(typeof sameness.GetArtistsOrTracks);
 console.log(typeof sameness.GetTop);
 
-function FillInData(filename){
+function FillInData(){
     // select top_artists, top_tracks for each user in users table
 
         // var genres = sameness.GetGenres(top_artists)
