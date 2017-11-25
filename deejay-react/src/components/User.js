@@ -9,7 +9,6 @@ const User = (props) => {
     const name = props.user.display_name
         ? props.user.display_name
         : props.user.id;
-    console.log(props.user);
     return (
         <div>
             <Image src={src} style={{ width: '75px' }} responsive circle />

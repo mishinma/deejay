@@ -5,7 +5,7 @@ const UserList = (props) => {
     return (
         <div style={{display: 'inline-block', paddingTop: '10px'}}>
             {props.users.map(user => {
-                return <User user={user} />
+                return <User key={user.id} user={user} />
             })}
         </div>
     );
