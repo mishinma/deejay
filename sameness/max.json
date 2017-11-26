@@ -1,0 +1,828 @@
+{
+	"items": [
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/7mnBLXK823vNxN3UWB7Gfz"
+			},
+			"followers": {
+				"href": null,
+				"total": 2188197
+			},
+			"genres": [
+				"alternative rock",
+				"blues-rock",
+				"classic rock",
+				"garage rock",
+				"indie rock",
+				"modern blues",
+				"modern rock",
+				"punk blues",
+				"rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/7mnBLXK823vNxN3UWB7Gfz",
+			"id": "7mnBLXK823vNxN3UWB7Gfz",
+			"images": [
+				{
+					"height": 667,
+					"url": "https://i.scdn.co/image/d9c6db5cc59db589396be9a10c074311e327e35d",
+					"width": 1000
+				},
+				{
+					"height": 427,
+					"url": "https://i.scdn.co/image/cdbeb38203304cc867653986feca753a6f06864c",
+					"width": 640
+				},
+				{
+					"height": 133,
+					"url": "https://i.scdn.co/image/15de21342d3e93ecfb05ca00b2203133dfb13d89",
+					"width": 200
+				},
+				{
+					"height": 43,
+					"url": "https://i.scdn.co/image/3741da5cae72ef8bb550675af6faf5dd50796833",
+					"width": 64
+				}
+			],
+			"name": "The Black Keys",
+			"popularity": 78,
+			"type": "artist",
+			"uri": "spotify:artist:7mnBLXK823vNxN3UWB7Gfz"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/11wRdbnoYqRddKBrpHt4Ue"
+			},
+			"followers": {
+				"href": null,
+				"total": 692988
+			},
+			"genres": [
+				"alternative dance",
+				"alternative rock",
+				"electronic",
+				"garage rock",
+				"indie rock",
+				"modern rock",
+				"new rave",
+				"rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/11wRdbnoYqRddKBrpHt4Ue",
+			"id": "11wRdbnoYqRddKBrpHt4Ue",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/8ef02a528dfa5496a410aa80e8b0316574ca95b7",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/0819d4451bf042bc0949e3a04216c7ddf11047b2",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/cdc16ad63b3377c40a547ad3bc0851d4be44adec",
+					"width": 160
+				}
+			],
+			"name": "Kasabian",
+			"popularity": 74,
+			"type": "artist",
+			"uri": "spotify:artist:11wRdbnoYqRddKBrpHt4Ue"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/0Nrwy16xCPXG8AwkMbcVvo"
+			},
+			"followers": {
+				"href": null,
+				"total": 45416
+			},
+			"genres": [
+				"alternative roots rock",
+				"garage rock",
+				"modern blues",
+				"punk blues"
+			],
+			"href": "https://api.spotify.com/v1/artists/0Nrwy16xCPXG8AwkMbcVvo",
+			"id": "0Nrwy16xCPXG8AwkMbcVvo",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/a44a6526a85da0634bb32ab71118709c64227a99",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/d05731ebfb5a9782fd8c574b532d6ee2b575d02f",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/811ea2fa7c68dcc4345edd011437b8527539c3a6",
+					"width": 64
+				}
+			],
+			"name": "Black Pistol Fire",
+			"popularity": 58,
+			"type": "artist",
+			"uri": "spotify:artist:0Nrwy16xCPXG8AwkMbcVvo"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/4pejUc4iciQfgdX6OKulQn"
+			},
+			"followers": {
+				"href": null,
+				"total": 1100181
+			},
+			"genres": [
+				"alternative metal",
+				"alternative rock",
+				"funk rock",
+				"garage rock",
+				"indie rock",
+				"modern rock",
+				"neo-psychedelic",
+				"nu metal",
+				"post-grunge",
+				"rock",
+				"stoner metal",
+				"stoner rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/4pejUc4iciQfgdX6OKulQn",
+			"id": "4pejUc4iciQfgdX6OKulQn",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/905233ed063a6350613c571e8508b65c3ae98080",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/bb87dad4464becc47d17eeeb1ccc0dd1d0bf22d9",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/e78c5b9700108b06482f7b1677120c6c565e8b0d",
+					"width": 160
+				}
+			],
+			"name": "Queens of the Stone Age",
+			"popularity": 79,
+			"type": "artist",
+			"uri": "spotify:artist:4pejUc4iciQfgdX6OKulQn"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/5L8u4AcYBOnxAtRrluOjKo"
+			},
+			"followers": {
+				"href": null,
+				"total": 6822
+			},
+			"genres": [
+			],
+			"href": "https://api.spotify.com/v1/artists/5L8u4AcYBOnxAtRrluOjKo",
+			"id": "5L8u4AcYBOnxAtRrluOjKo",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/a032a5a45a2d853fb5bb4fe1c378715938c70e19",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/1cfddbd1f7051307511aba68f475b104afca9f2a",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/7daa7f63631361d7d6264d5c065eba2f47909f41",
+					"width": 64
+				}
+			],
+			"name": "The Picturebooks",
+			"popularity": 39,
+			"type": "artist",
+			"uri": "spotify:artist:5L8u4AcYBOnxAtRrluOjKo"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/3XHO7cRUPCLOr6jwp8vsx5"
+			},
+			"followers": {
+				"href": null,
+				"total": 1677591
+			},
+			"genres": [
+				"indie rock",
+				"modern rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/3XHO7cRUPCLOr6jwp8vsx5",
+			"id": "3XHO7cRUPCLOr6jwp8vsx5",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/7ac54cbec2f1b3f5f1b7f6fc23acb9d00c70fb51",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/592ac1bc107c62fbdd9e1e91e891577672fa6bb3",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/94874205e99b9e27b316ea8c559679b740bdb038",
+					"width": 160
+				}
+			],
+			"name": "alt-J",
+			"popularity": 80,
+			"type": "artist",
+			"uri": "spotify:artist:3XHO7cRUPCLOr6jwp8vsx5"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/1ztNPX8z169arfAY0TWFLB"
+			},
+			"followers": {
+				"href": null,
+				"total": 45683
+			},
+			"genres": [
+				"rock gaucho"
+			],
+			"href": "https://api.spotify.com/v1/artists/1ztNPX8z169arfAY0TWFLB",
+			"id": "1ztNPX8z169arfAY0TWFLB",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/e75cd1b07b41a9aaf33f241e697a5370f6fda27a",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/85b2e498a9e5ea6460ee241f423075015126afac",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/a32732e8a497d29559ec9d90a7b0063844918ebd",
+					"width": 160
+				}
+			],
+			"name": "Far From Alaska",
+			"popularity": 50,
+			"type": "artist",
+			"uri": "spotify:artist:1ztNPX8z169arfAY0TWFLB"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/3qwxSif06Qwzykdln8ZGfG"
+			},
+			"followers": {
+				"href": null,
+				"total": 138487
+			},
+			"genres": [
+				"acid jazz",
+				"big beat",
+				"electro swing",
+				"electronic",
+				"ninja",
+				"nu jazz",
+				"trip hop",
+				"turntablism"
+			],
+			"href": "https://api.spotify.com/v1/artists/3qwxSif06Qwzykdln8ZGfG",
+			"id": "3qwxSif06Qwzykdln8ZGfG",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/c0d688a0960ec80b2607a46cc59d814e041e56dd",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/791872ddc97d8d2dafdcc3136d8fc9dc0f36b85d",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/93c8b1695cc9f34147c04ad035e6bda918933780",
+					"width": 160
+				}
+			],
+			"name": "Wax Tailor",
+			"popularity": 61,
+			"type": "artist",
+			"uri": "spotify:artist:3qwxSif06Qwzykdln8ZGfG"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/5I4eibDkC7gg0hmczTZuND"
+			},
+			"followers": {
+				"href": null,
+				"total": 167522
+			},
+			"genres": [
+				"garage rock",
+				"indie christmas",
+				"indie rock",
+				"modern rock",
+				"swedish alternative rock",
+				"swedish indie rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/5I4eibDkC7gg0hmczTZuND",
+			"id": "5I4eibDkC7gg0hmczTZuND",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/4a21e6a65fa549a41de94eb17437b3949aae478e",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/78402433227854c5fdea145be9f988ecb048631a",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/034f4efcf88d2d9dcdcc4f79021bed03a3b66fa5",
+					"width": 160
+				}
+			],
+			"name": "Mando Diao",
+			"popularity": 62,
+			"type": "artist",
+			"uri": "spotify:artist:5I4eibDkC7gg0hmczTZuND"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/0bZCak2tcRMY1dzEIuwF42"
+			},
+			"followers": {
+				"href": null,
+				"total": 189908
+			},
+			"genres": [
+				"funk",
+				"garage rock",
+				"modern blues",
+				"modern rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/0bZCak2tcRMY1dzEIuwF42",
+			"id": "0bZCak2tcRMY1dzEIuwF42",
+			"images": [
+				{
+					"height": 1000,
+					"url": "https://i.scdn.co/image/fb2800c936ac7aa70e00a04daad889300d87f3f7",
+					"width": 1000
+				},
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/abaa55e132d336f75ac6eb00a35541623efef496",
+					"width": 640
+				},
+				{
+					"height": 200,
+					"url": "https://i.scdn.co/image/c01bd5cbad016e44c9130814457061a600ad8ec1",
+					"width": 200
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/113bf5d91bbebf7b2a2d3bb8e3448dbaadf3577a",
+					"width": 64
+				}
+			],
+			"name": "The Heavy",
+			"popularity": 64,
+			"type": "artist",
+			"uri": "spotify:artist:0bZCak2tcRMY1dzEIuwF42"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/2S5hlvw4CMtMGswFtfdK15"
+			},
+			"followers": {
+				"href": null,
+				"total": 541674
+			},
+			"genres": [
+				"alternative rock",
+				"garage rock",
+				"indie rock",
+				"modern rock",
+				"rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/2S5hlvw4CMtMGswFtfdK15",
+			"id": "2S5hlvw4CMtMGswFtfdK15",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/32edab67a5aaa296a2e8bc76cd59e6e49f351f4f",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/075bb2a2ed24464a91e5b97063c610363869bd1b",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/7979c44d11b7795550f8c2801d4073502de7ed1f",
+					"width": 160
+				}
+			],
+			"name": "Royal Blood",
+			"popularity": 76,
+			"type": "artist",
+			"uri": "spotify:artist:2S5hlvw4CMtMGswFtfdK15"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/1O3ZOjqFLEnbpZexcRjocn"
+			},
+			"followers": {
+				"href": null,
+				"total": 208491
+			},
+			"genres": [
+				"alternative hip hop",
+				"big beat",
+				"electronic",
+				"hip hop",
+				"ninja",
+				"nu jazz",
+				"trip hop",
+				"turntablism"
+			],
+			"href": "https://api.spotify.com/v1/artists/1O3ZOjqFLEnbpZexcRjocn",
+			"id": "1O3ZOjqFLEnbpZexcRjocn",
+			"images": [
+				{
+					"height": 920,
+					"url": "https://i.scdn.co/image/9f42c08ebd98e3df8c1549b172a911f1c56358de",
+					"width": 613
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/343dd4d49c17b24c4f04e870a82f83d6fa4ddb8c",
+					"width": 200
+				},
+				{
+					"height": 96,
+					"url": "https://i.scdn.co/image/1e5319edafb60d5d08b77f8f0b75ca02a0bc7a2b",
+					"width": 64
+				}
+			],
+			"name": "RJD2",
+			"popularity": 62,
+			"type": "artist",
+			"uri": "spotify:artist:1O3ZOjqFLEnbpZexcRjocn"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/5M52tdBnJaKSvOpJGz8mfZ"
+			},
+			"followers": {
+				"href": null,
+				"total": 1792525
+			},
+			"genres": [
+				"album rock",
+				"alternative rock",
+				"art rock",
+				"classic rock",
+				"hard rock",
+				"metal",
+				"rock",
+				"stoner rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/5M52tdBnJaKSvOpJGz8mfZ",
+			"id": "5M52tdBnJaKSvOpJGz8mfZ",
+			"images": [
+				{
+					"height": 1333,
+					"url": "https://i.scdn.co/image/5931700f9515dd6587230130beb615e0549e47dc",
+					"width": 1000
+				},
+				{
+					"height": 853,
+					"url": "https://i.scdn.co/image/2af99dc3c8acbbe00d913526229def80e7f42e5f",
+					"width": 640
+				},
+				{
+					"height": 267,
+					"url": "https://i.scdn.co/image/6f37a1025ba3f8e2dbb3b15cf30016ff728ba51d",
+					"width": 200
+				},
+				{
+					"height": 85,
+					"url": "https://i.scdn.co/image/86bc6e056f0b843648071b1456dc8e31af1e019e",
+					"width": 64
+				}
+			],
+			"name": "Black Sabbath",
+			"popularity": 77,
+			"type": "artist",
+			"uri": "spotify:artist:5M52tdBnJaKSvOpJGz8mfZ"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/2gbOUPIhea9nrCmAeZBgpo"
+			},
+			"followers": {
+				"href": null,
+				"total": 15585
+			},
+			"genres": [
+				"garage rock",
+				"modern blues",
+				"punk blues",
+				"vancouver indie"
+			],
+			"href": "https://api.spotify.com/v1/artists/2gbOUPIhea9nrCmAeZBgpo",
+			"id": "2gbOUPIhea9nrCmAeZBgpo",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/30cdf9f59ce1989a059aaaa6e5e3c42d8b178cc5",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/626090923d58320e5a26cbdf84e581642764a4ee",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/26d3d21038012644b67cbe971f83559990fb02c7",
+					"width": 160
+				}
+			],
+			"name": "The Pack a.d.",
+			"popularity": 47,
+			"type": "artist",
+			"uri": "spotify:artist:2gbOUPIhea9nrCmAeZBgpo"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/692VvGTch5OLXj4zEE6H3y"
+			},
+			"followers": {
+				"href": null,
+				"total": 63767
+			},
+			"genres": [
+				"blues-rock",
+				"garage rock",
+				"modern blues",
+				"neo-psychedelic",
+				"psychedelic doom",
+				"punk blues",
+				"stoner rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/692VvGTch5OLXj4zEE6H3y",
+			"id": "692VvGTch5OLXj4zEE6H3y",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/a3633a94c8c48cc784a01aa2715649e5183ad583",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/856863ea9050dfd9956ce335763d0004d895c9db",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/ef2bad971b0bc24177753ea3ee6628cff52ffab7",
+					"width": 160
+				}
+			],
+			"name": "Radio Moscow",
+			"popularity": 52,
+			"type": "artist",
+			"uri": "spotify:artist:692VvGTch5OLXj4zEE6H3y"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/22WZ7M8sxp5THdruNY3gXt"
+			},
+			"followers": {
+				"href": null,
+				"total": 1948460
+			},
+			"genres": [
+				"album rock",
+				"blues-rock",
+				"classic rock",
+				"folk rock",
+				"hard rock",
+				"piano rock",
+				"psychedelic rock",
+				"rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/22WZ7M8sxp5THdruNY3gXt",
+			"id": "22WZ7M8sxp5THdruNY3gXt",
+			"images": [
+				{
+					"height": 1253,
+					"url": "https://i.scdn.co/image/b8c3d75acf2d800defb05b8515445e6d064c97d5",
+					"width": 919
+				},
+				{
+					"height": 873,
+					"url": "https://i.scdn.co/image/fdca4a508d930f9add0c73c33883a691cc3d8eaa",
+					"width": 640
+				},
+				{
+					"height": 273,
+					"url": "https://i.scdn.co/image/9c97e2cbfe6d056026c2904a3f0e2c286f4b4061",
+					"width": 200
+				},
+				{
+					"height": 87,
+					"url": "https://i.scdn.co/image/3da16e239906bb95e5c4858596b695deebf87260",
+					"width": 64
+				}
+			],
+			"name": "The Doors",
+			"popularity": 78,
+			"type": "artist",
+			"uri": "spotify:artist:22WZ7M8sxp5THdruNY3gXt"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH"
+			},
+			"followers": {
+				"href": null,
+				"total": 4566488
+			},
+			"genres": [
+				"garage rock",
+				"indie rock",
+				"modern rock",
+				"permanent wave",
+				"sheffield indie"
+			],
+			"href": "https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH",
+			"id": "7Ln80lUS6He07XvHI8qqHH",
+			"images": [
+				{
+					"height": 1333,
+					"url": "https://i.scdn.co/image/c488bf987b2f716a539a768a102855450345113d",
+					"width": 1000
+				},
+				{
+					"height": 853,
+					"url": "https://i.scdn.co/image/b30c0e39cfa70b2124b9d0d24e83761ef48e5540",
+					"width": 640
+				},
+				{
+					"height": 267,
+					"url": "https://i.scdn.co/image/e1f00ceabce8dd0480bad7e873993082d9ac3fe9",
+					"width": 200
+				},
+				{
+					"height": 85,
+					"url": "https://i.scdn.co/image/eba02729ec372fd9954cafd3fd71950bb8fc385f",
+					"width": 64
+				}
+			],
+			"name": "Arctic Monkeys",
+			"popularity": 86,
+			"type": "artist",
+			"uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/1HCdPZB0ypEcpDo4T55sMi"
+			},
+			"followers": {
+				"href": null,
+				"total": 49251
+			},
+			"genres": [
+				"bay area indie",
+				"blues-rock",
+				"garage rock",
+				"modern blues",
+				"punk blues"
+			],
+			"href": "https://api.spotify.com/v1/artists/1HCdPZB0ypEcpDo4T55sMi",
+			"id": "1HCdPZB0ypEcpDo4T55sMi",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/77f22688cbad8709ab41483f8e4900212c11e0e7",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/a83088c3a79c7008f87a7c090a272b34a25658bd",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/9cde20f8a17e944f4cd9604adf40c1b793c8fd2c",
+					"width": 160
+				}
+			],
+			"name": "Hanni El Khatib",
+			"popularity": 53,
+			"type": "artist",
+			"uri": "spotify:artist:1HCdPZB0ypEcpDo4T55sMi"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/6Wr3hh341P84m3EI8qdn9O"
+			},
+			"followers": {
+				"href": null,
+				"total": 1230065
+			},
+			"genres": [
+				"alternative metal",
+				"hardcore punk",
+				"modern rock",
+				"nu metal",
+				"pop punk",
+				"post-grunge",
+				"punk"
+			],
+			"href": "https://api.spotify.com/v1/artists/6Wr3hh341P84m3EI8qdn9O",
+			"id": "6Wr3hh341P84m3EI8qdn9O",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/bb54f19ac8a70161e63b460b8d28105c09e8b4e3",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/5d387d8990d08cff197a3b9d20693561320947a2",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/3f45845c4ddc04859e6cf661cadbcb66794ad447",
+					"width": 160
+				}
+			],
+			"name": "Rise Against",
+			"popularity": 79,
+			"type": "artist",
+			"uri": "spotify:artist:6Wr3hh341P84m3EI8qdn9O"
+		},
+		{
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/2lmQ4CUnjmLIIfnwZdRmMY"
+			},
+			"followers": {
+				"href": null,
+				"total": 49322
+			},
+			"genres": [
+				"retro metal",
+				"stoner rock"
+			],
+			"href": "https://api.spotify.com/v1/artists/2lmQ4CUnjmLIIfnwZdRmMY",
+			"id": "2lmQ4CUnjmLIIfnwZdRmMY",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/80168e50435461b63ce4ee8c1b94304959480805",
+					"width": 640
+				},
+				{
+					"height": 320,
+					"url": "https://i.scdn.co/image/de14e5c76361f565ed7cbcc098a42c8701fa28fb",
+					"width": 320
+				},
+				{
+					"height": 160,
+					"url": "https://i.scdn.co/image/5347a78c9b70565385901d11b0b8dfe7c3b986cf",
+					"width": 160
+				}
+			],
+			"name": "Blues Pills",
+			"popularity": 47,
+			"type": "artist",
+			"uri": "spotify:artist:2lmQ4CUnjmLIIfnwZdRmMY"
+		}
+	],
+	"total": 177,
+	"limit": 20,
+	"offset": 0,
+	"href": "https://api.spotify.com/v1/me/top/artists",
+	"previous": null,
+	"next": "https://api.spotify.com/v1/me/top/artists?limit=20&offset=20"
+}

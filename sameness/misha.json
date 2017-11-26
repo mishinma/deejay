@@ -1,0 +1,468 @@
+{
+    "items": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh"
+        },
+        "followers": {
+          "href": null,
+          "total": 4412827
+        },
+        "genres": [
+          "alternative metal",
+          "alternative rock",
+          "classic rock",
+          "grunge",
+          "modern rock",
+          "permanent wave",
+          "post-grunge",
+          "rock"
+        ],
+        "href": "https://api.spotify.com/v1/artists/6olE6TJLqED3rqDCT0FyPh",
+        "id": "6olE6TJLqED3rqDCT0FyPh",
+        "images": [
+          {
+            "height": 1057,
+            "url": "https://i.scdn.co/image/84282c28d851a700132356381fcfbadc67ff498b",
+            "width": 1000
+          },
+          {
+            "height": 677,
+            "url": "https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6",
+            "width": 640
+          },
+          {
+            "height": 211,
+            "url": "https://i.scdn.co/image/42ae0f180f16e2f21c1f2212717fc436f5b95451",
+            "width": 200
+          },
+          {
+            "height": 68,
+            "url": "https://i.scdn.co/image/e797ad36d56c3fc8fa06c6fe91263a15bf8391b8",
+            "width": 64
+          }
+        ],
+        "name": "Nirvana",
+        "popularity": 84,
+        "type": "artist",
+        "uri": "spotify:artist:6olE6TJLqED3rqDCT0FyPh"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+        },
+        "followers": {
+          "href": null,
+          "total": 2764232
+        },
+        "genres": [
+          "alternative metal",
+          "alternative rock",
+          "funk rock",
+          "nu metal",
+          "post-grunge",
+          "rock"
+        ],
+        "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
+        "id": "5eAWCfyUhZtHHtBdNk56l1",
+        "images": [
+          {
+            "height": 454,
+            "url": "https://i.scdn.co/image/76245f096873524d6b507c093854a41fb90b9ae0",
+            "width": 1000
+          },
+          {
+            "height": 290,
+            "url": "https://i.scdn.co/image/5dee147b9ddad1f9aeb4e313793294c3c07bcb3e",
+            "width": 639
+          },
+          {
+            "height": 91,
+            "url": "https://i.scdn.co/image/2d4dff219617a2d1d52084096e9dfa3a68ff778d",
+            "width": 200
+          },
+          {
+            "height": 29,
+            "url": "https://i.scdn.co/image/57da6643a745f27aa9656a591d5f64758a96ec31",
+            "width": 64
+          }
+        ],
+        "name": "System Of A Down",
+        "popularity": 83,
+        "type": "artist",
+        "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5"
+        },
+        "followers": {
+          "href": null,
+          "total": 5226205
+        },
+        "genres": [
+          "alternative rock",
+          "funk metal",
+          "funk rock",
+          "modern rock",
+          "permanent wave",
+          "rock"
+        ],
+        "href": "https://api.spotify.com/v1/artists/0L8ExT028jH3ddEcZwqJJ5",
+        "id": "0L8ExT028jH3ddEcZwqJJ5",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/5b2072e522bf3324019a8c2dc3db20116dff0b87",
+            "width": 640
+          },
+          {
+            "height": 320,
+            "url": "https://i.scdn.co/image/9527e700b5c80aa67350d5de0da10a0aa754fcb1",
+            "width": 320
+          },
+          {
+            "height": 160,
+            "url": "https://i.scdn.co/image/a7af6412632c81ebfb5e39495aa3dacc564cb22b",
+            "width": 160
+          }
+        ],
+        "name": "Red Hot Chili Peppers",
+        "popularity": 88,
+        "type": "artist",
+        "uri": "spotify:artist:0L8ExT028jH3ddEcZwqJJ5"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6FXMGgJwohJLUSr5nVlf9X"
+        },
+        "followers": {
+          "href": null,
+          "total": 771191
+        },
+        "genres": [
+          "big beat",
+          "downtempo",
+          "electronic",
+          "nu jazz",
+          "trip hop"
+        ],
+        "href": "https://api.spotify.com/v1/artists/6FXMGgJwohJLUSr5nVlf9X",
+        "id": "6FXMGgJwohJLUSr5nVlf9X",
+        "images": [
+          {
+            "height": 1335,
+            "url": "https://i.scdn.co/image/c8bbeedb05f38ae5cb982a7daf4bf7129cca892c",
+            "width": 1000
+          },
+          {
+            "height": 855,
+            "url": "https://i.scdn.co/image/52c2a824e84f4e8adf0b12418f9f8306b4b5b77a",
+            "width": 640
+          },
+          {
+            "height": 267,
+            "url": "https://i.scdn.co/image/0d6b7677f8291c5158bdace8a6e027880c527c2a",
+            "width": 200
+          },
+          {
+            "height": 85,
+            "url": "https://i.scdn.co/image/c055290bb6e97a589d8ca659cd452a8e9831c2c4",
+            "width": 64
+          }
+        ],
+        "name": "Massive Attack",
+        "popularity": 70,
+        "type": "artist",
+        "uri": "spotify:artist:6FXMGgJwohJLUSr5nVlf9X"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/165ZgPlLkK7bf5bDoFc6Sb"
+        },
+        "followers": {
+          "href": null,
+          "total": 1309522
+        },
+        "genres": [
+          "alternative metal",
+          "alternative rock",
+          "funk metal",
+          "nu metal",
+          "post-grunge",
+          "rap metal",
+          "rap rock",
+          "rock",
+          "wrestling"
+        ],
+        "href": "https://api.spotify.com/v1/artists/165ZgPlLkK7bf5bDoFc6Sb",
+        "id": "165ZgPlLkK7bf5bDoFc6Sb",
+        "images": [
+          {
+            "height": 1006,
+            "url": "https://i.scdn.co/image/4654955890cb62a6abe9daadfd2b3ecdee8036e4",
+            "width": 1000
+          },
+          {
+            "height": 644,
+            "url": "https://i.scdn.co/image/c8e241c3b7ddb2839be99acf9a1ad2d73f04b936",
+            "width": 640
+          },
+          {
+            "height": 201,
+            "url": "https://i.scdn.co/image/38532b2db9bc627567271da917855a59be788860",
+            "width": 200
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/67ab66b1154c3115005086d60853fc954717a2ea",
+            "width": 64
+          }
+        ],
+        "name": "Limp Bizkit",
+        "popularity": 77,
+        "type": "artist",
+        "uri": "spotify:artist:165ZgPlLkK7bf5bDoFc6Sb"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7mO0JGOATH8fVHvgCdZsXh"
+        },
+        "followers": {
+          "href": null,
+          "total": 36372
+        },
+        "genres": [
+          "avantgarde metal",
+          "doom metal",
+          "drone metal",
+          "mathcore",
+          "post rock",
+          "post-doom metal",
+          "post-metal",
+          "psychedelic doom",
+          "sludge metal",
+          "space rock",
+          "stoner metal",
+          "stoner rock"
+        ],
+        "href": "https://api.spotify.com/v1/artists/7mO0JGOATH8fVHvgCdZsXh",
+        "id": "7mO0JGOATH8fVHvgCdZsXh",
+        "images": [
+          {
+            "height": 667,
+            "url": "https://i.scdn.co/image/c2cb3235131de64b93f140d2112a657c9c49bb2c",
+            "width": 1000
+          },
+          {
+            "height": 427,
+            "url": "https://i.scdn.co/image/6b74855ffb2b466578cd98c8d33a628be624d6eb",
+            "width": 640
+          },
+          {
+            "height": 133,
+            "url": "https://i.scdn.co/image/87a602072b90a26a3abb3a7a5c63aa6081cf90ca",
+            "width": 199
+          },
+          {
+            "height": 43,
+            "url": "https://i.scdn.co/image/5929d897ca668da67ebedc877dd68f8780050b03",
+            "width": 64
+          }
+        ],
+        "name": "Kylesa",
+        "popularity": 45,
+        "type": "artist",
+        "uri": "spotify:artist:7mO0JGOATH8fVHvgCdZsXh"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3kjuyTCjPG1WMFCiyc5IuB"
+        },
+        "followers": {
+          "href": null,
+          "total": 1071602
+        },
+        "genres": [
+          "alternative dance",
+          "alternative rock",
+          "canadian indie",
+          "canadian pop",
+          "chamber pop",
+          "indie folk",
+          "indie pop",
+          "indie rock",
+          "indietronica",
+          "modern rock",
+          "permanent wave"
+        ],
+        "href": "https://api.spotify.com/v1/artists/3kjuyTCjPG1WMFCiyc5IuB",
+        "id": "3kjuyTCjPG1WMFCiyc5IuB",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/30178636b1a28ab76de5a4a4599cc9a5dd866735",
+            "width": 640
+          },
+          {
+            "height": 320,
+            "url": "https://i.scdn.co/image/b24cac2dedc6d9739f0fd5eef5a82bdf8fe1b4b6",
+            "width": 320
+          },
+          {
+            "height": 160,
+            "url": "https://i.scdn.co/image/a9b5eb07f07bb17e2c81288bd6c7a3d9d9b7d60b",
+            "width": 160
+          }
+        ],
+        "name": "Arcade Fire",
+        "popularity": 77,
+        "type": "artist",
+        "uri": "spotify:artist:3kjuyTCjPG1WMFCiyc5IuB"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4wLIbcoqmqI4WZHDiBxeCB"
+        },
+        "followers": {
+          "href": null,
+          "total": 86811
+        },
+        "genres": [
+          "alternative pop",
+          "alternative rock",
+          "anti-folk",
+          "electroclash",
+          "escape room",
+          "folk-pop",
+          "garage rock",
+          "indie folk",
+          "indie pop",
+          "indie punk",
+          "indie rock",
+          "lilith",
+          "lo-fi",
+          "modern rock",
+          "noise pop",
+          "noise rock",
+          "preverb",
+          "riot grrrl"
+        ],
+        "href": "https://api.spotify.com/v1/artists/4wLIbcoqmqI4WZHDiBxeCB",
+        "id": "4wLIbcoqmqI4WZHDiBxeCB",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/2ff829de85b2b35a0aeabdb49bcbe2f616b0c63a",
+            "width": 640
+          },
+          {
+            "height": 320,
+            "url": "https://i.scdn.co/image/9d05b04dd13b010bb5b3e42d7b312959ae8deb85",
+            "width": 320
+          },
+          {
+            "height": 160,
+            "url": "https://i.scdn.co/image/c4307729506b3d0b38ae630d844b95b522d6b5fb",
+            "width": 160
+          }
+        ],
+        "name": "Sleater-Kinney",
+        "popularity": 52,
+        "type": "artist",
+        "uri": "spotify:artist:4wLIbcoqmqI4WZHDiBxeCB"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3vbKDsSS70ZX9D2OcvbZmS"
+        },
+        "followers": {
+          "href": null,
+          "total": 671810
+        },
+        "genres": [
+          "alternative rock",
+          "anti-folk",
+          "blues-rock",
+          "electronic",
+          "folk christmas",
+          "garage rock",
+          "indie christmas",
+          "indie rock",
+          "modern rock",
+          "neo-psychedelic",
+          "permanent wave",
+          "pop rock",
+          "rock"
+        ],
+        "href": "https://api.spotify.com/v1/artists/3vbKDsSS70ZX9D2OcvbZmS",
+        "id": "3vbKDsSS70ZX9D2OcvbZmS",
+        "images": [
+          {
+            "height": 637,
+            "url": "https://i.scdn.co/image/0f9a6de96397097f0a717bdbd4b15fe9d97ca5d0",
+            "width": 640
+          },
+          {
+            "height": 319,
+            "url": "https://i.scdn.co/image/7a51cc5f85b602a6058f79ac13211c4e06175944",
+            "width": 320
+          },
+          {
+            "height": 159,
+            "url": "https://i.scdn.co/image/bd9d8b22499c4b3d1cb2358a7f50d061b77a247d",
+            "width": 160
+          }
+        ],
+        "name": "Beck",
+        "popularity": 77,
+        "type": "artist",
+        "uri": "spotify:artist:3vbKDsSS70ZX9D2OcvbZmS"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
+        },
+        "followers": {
+          "href": null,
+          "total": 514800
+        },
+        "genres": [
+          "indie pop",
+          "indie rock",
+          "indietronica",
+          "modern rock",
+          "neo-psychedelic"
+        ],
+        "href": "https://api.spotify.com/v1/artists/4kI8Ie27vjvonwaB2ePh8T",
+        "id": "4kI8Ie27vjvonwaB2ePh8T",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/14986410cac8475f5036cfba5d2eec56a1399c0d",
+            "width": 640
+          },
+          {
+            "height": 320,
+            "url": "https://i.scdn.co/image/8c772785bd23414ce72eaa21c9da1aa6cc04d2f9",
+            "width": 320
+          },
+          {
+            "height": 160,
+            "url": "https://i.scdn.co/image/aafcc4b7f32d1bea28960093dc36ee48a9c5b4aa",
+            "width": 160
+          }
+        ],
+        "name": "Portugal. The Man",
+        "popularity": 86,
+        "type": "artist",
+        "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T"
+      }
+    ],
+    "total": 67,
+    "limit": 10,
+    "offset": 5,
+    "previous": null,
+    "href": "https://api.spotify.com/v1/me/top/artists?limit=10&offset=5",
+    "next": "https://api.spotify.com/v1/me/top/artists?limit=10&offset=15"
+  }
