@@ -15,6 +15,23 @@ export const createRoom = (token) => {
     });
 }
 
+export const joinRoom = (token, roomUrl) => {
+
+  return fetch(`${process.env.REACT_APP_BACKEND_URL}/room/join?token=${token}&room=${roomUrl}`)
+    .then(res => {
+      return res;
+    });
+}
+
+
+export const getAllRoomUsers = (roomId) => {
+    return fetch(`${process.env.REACT_APP_BACKEND_URL}/user?roomid=${roomId}`)
+      .then(res => {
+        return res.json();
+      });
+}
+
+
 export const registerPlayer = (token, spotifyApi, player) => {
   // eslint-disable-next-line
   window.onSpotifyPlayerAPIReady = () => {
@@ -49,4 +66,28 @@ export const registerPlayer = (token, spotifyApi, player) => {
     // Connect to the player!
     player.connect();
   }
+}
+
+
+export const createCookie = (name,value) => {
+    var expires = "";
+    var date = new Date();
+    date.setTime(date.getTime() + 60*1000);
+    expires = "; expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+export const readCookie = (name) => {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+export const eraseCookie = (name) => {
+    createCookie(name,"",-1);
 }

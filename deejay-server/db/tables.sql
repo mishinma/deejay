@@ -8,6 +8,7 @@ CREATE TABLE rooms (
 
 CREATE TABLE users (
 	id  SERIAL  PRIMARY KEY,
+	display_name    VARCHAR(100)  NOT NULL,
 	roomid   INT  REFERENCES  rooms,
 	top_tracks    JSON,
 	top_artists   JSON
