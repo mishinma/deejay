@@ -67,12 +67,31 @@ const getTopTracks = (token) => {
 };
 
 
-const getRoomAllTopArtists = (roomId) => {
-    const selectStm = `SELECT
-                asdf
-    `
+// const getRoomAllTopArtists = (roomId) => {
+//     const selectStm = `SELECT
+//                 asdf
+//     `
+//
+// }
 
-}
+const getUserName = (token) => {
+  return fetch(`https://api.spotify.com/v1/me/`, {
+    method: 'get',
+    headers: { 'Authorization': `Bearer ${token}` }
+  })
+  .then(response => {
+    return response.json();
+  })
+};
+
+// const getUserName = (token) => {
+//     spotifyApi.setAccessToken(token);
+//     spotifyApi.getMe()
+//     .then(data => {
+//     //   console.log(data.body.display_name);
+//       return data.body.display_name;
+//     })
+// }
 
 
 //-------------------------------------------------------------//
@@ -124,7 +143,7 @@ app.get("/room/join", (request, result, next) => {
     // console.log(roomUrl);
 
     const selectRoomStm = 'SELECT id FROM rooms WHERE url = $1::text'
-    const insertUserStm = 'INSERT INTO users (roomid, top_artists, top_tracks) VALUES ($1,  $2::json, $3::json)';
+    const insertUserStm = 'INSERT INTO users (roomid, name, top_artists, top_tracks) VALUES ($1, $2::text, $3::json, $4::json)';
 
     const roomIdPromise = db.query(selectRoomStm, [roomUrl])
     .then(res => {
@@ -133,15 +152,18 @@ app.get("/room/join", (request, result, next) => {
 
     const promises = [
         roomIdPromise,
+        getUserName(token),
         getTopArtists(token),
         getTopTracks(token)
     ];
 
     Promise.all(promises).then(data => {
+        console.log(data);
         const roomId = data[0];
-        const topArtists = data[1];
-        const topTracks = data[2];
-        db.query(insertUserStm, [roomId, topArtists, topTracks])
+        const userName = data[1].display_name;
+        const topArtists = data[2];
+        const topTracks = data[3];
+        db.query(insertUserStm, [roomId, userName, topArtists, topTracks])
         .then(res => {
             result.status(200).send()
         });
@@ -160,9 +182,8 @@ app.get("/room/create", (request, result, next) => {
     const roomShareableUrl = createRoomShareableUrl(roomUrl);
     console.log(roomShareableUrl);
 
-    const insertUserStm = 'INSERT INTO users (roomid, top_artists, top_tracks) VALUES ($1,  $2::json, $3::json)';
+    const insertUserStm = 'INSERT INTO users (roomid, name, top_artists, top_tracks) VALUES ($1, $2::text, $3::json, $4::json)';
     const insertRoomStm = 'INSERT INTO rooms (url) VALUES ($1::text) RETURNING id';
-
 
     const roomIdPromise = db.query(insertRoomStm, [roomUrl])
     .then(res => {
@@ -171,17 +192,19 @@ app.get("/room/create", (request, result, next) => {
 
     const promises = [
         roomIdPromise,
+        getUserName(token),
         getTopArtists(token),
         getTopTracks(token)
     ];
 
     Promise.all(promises).then(data => {
+        // console.log(data);
         const roomId = data[0];
-        const topArtists = data[1];
-        const topTracks = data[2];
-        db.query(insertUserStm, [roomId, topArtists, topTracks])
+        const userName = data[1].display_name;
+        const topArtists = data[2];
+        const topTracks = data[3];
+        db.query(insertUserStm, [roomId, userName, topArtists, topTracks])
         .then(res => {
-            console.log(res);
             result.json({
                 'roomShareableUrl': roomShareableUrl,
                 'seedArtists': topArtists
