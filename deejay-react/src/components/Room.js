@@ -16,6 +16,7 @@ class Room extends Component {
 
     this.state = {
       artists_seed: [],
+      genres_seed: [],
       recommendations: [],
       users: [],
       id: null,
@@ -42,17 +43,46 @@ class Room extends Component {
       });
   };
 
+
+  refreshSeeds = () => {
+      this.setState({
+          artists_seed: ['1YZEoYFXx4AxVv13OiOPvZ','6olE6TJLqED3rqDCT0FyPh','0L8ExT028jH3ddEcZwqJJ5','6FXMGgJwohJLUSr5nVlf9X','165ZgPlLkK7bf5bDoFc6Sb'],
+          genres_seed: ['rock','alternative rock','modern rock','indie pop','permanent wave']
+      });
+  }
+
+  refreshEverything = () => {
+      this.refreshUsers();
+      this.refreshSeeds();
+      getRecommendations({
+          seed_artists: this.state.artists_seed
+      }, this.props.token)
+      .then(tracks => {
+        this.setState({
+            ...this.state,
+            recommendations: tracks,
+        })});
+    }
+
+  // All { seed_artists: ‘1YZEoYFXx4AxVv13OiOPvZ,6olE6TJLqED3rqDCT0FyPh,0L8ExT028jH3ddEcZwqJJ5,6FXMGgJwohJLUSr5nVlf9X,165ZgPlLkK7bf5bDoFc6Sb’,
+  //  seed_genres: ‘rock,alternative rock,modern rock,indie pop,permanent wave’ }
+  //
+  // Dicle { seed_artists: ‘1sSUBGud3QgpkiaQ27XDIm,2Gt8bzahH9RSMrH6heY2vF,3WTWOrIS77vY3hkCFqTyIw,1kS52jCnMYq4n46ZX9zqw7,4UXJsSlnKd7ltsrHebV79Q’,
+  //  seed_genres: ‘deep indie r&b,indie r&b,escape room,tropical house,nu jazz’ }
+
   componentDidMount() {
     createRoom(this.props.token)
       .then(json => {
           console.log(json);
           getRecommendations({
-              seed_artists: json.seedArtists.items.map(artist => artist.id).slice(0,5)
+              seed_artists: json.seedArtists
           }, this.props.token)
           .then(tracks => {
             this.setState({
                 ...this.state,
                 recommendations: tracks,
+                artists_seed: json.seedArtists,
+                genres_seed:  ['deep indie r&b','indie r&b','escape room','tropical house','nu jazz'],
                 link: json.roomShareableUrl,
                 id: json.roomId
             });
@@ -81,7 +111,7 @@ class Room extends Component {
         <div>
             <p id="empty"></p>
             <p id="empty"></p>
-            <UserList users={this.state.users} refreshUsers={this.refreshUsers} />
+            <UserList users={this.state.users} refreshUsers={this.refreshEverything} />
             <p id="empty"></p>
             <p id="empty"></p>
             <TrackList tracks={this.state.recommendations} token={this.props.token} />
