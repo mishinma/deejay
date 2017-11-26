@@ -11,10 +11,7 @@ const Home = (props) => {
     return (
         <div style={{paddingTop: '30px'}}>
 
-            <p id="empty"></p>
-            <p id="empty"></p>
-            <p id="empty"></p>
-            <p id="empty"></p>
+            
             <p id="empty"></p>
             <h1 id="title">Welcome to DeeJay!</h1>
             <p id="empty"></p>

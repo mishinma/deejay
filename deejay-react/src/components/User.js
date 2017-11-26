@@ -11,7 +11,7 @@ const User = (props) => {
         ? user.display_name
         : user.id;
     return (
-        <div  style={{display: 'inline-block'}}>
+        <div  style={{display: 'inline-block', paddingLeft: '10px', paddingRight: '10px'}}>
             <Image src={src} style={{ width: '75px' }} responsive circle />
             <h4>{name}</h4>
         </div>

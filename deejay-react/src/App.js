@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Room from './components/Room';
 import Home from './components/Home';
@@ -8,6 +7,8 @@ import Join from './components/Join';
 import background from './background.png'
 import spo from './Spotify_Icon_RGB_Green.png'
 
+import { Image } from 'react-bootstrap';
+import logo from './junction_spotify_logo.png';
 
 
 class App extends Component {
@@ -35,7 +36,10 @@ class App extends Component {
     return (
   
       <div className="App" style={{backgroundImage: `url(${background})`}}>
-
+        <header>
+          <p id="empty"></p>
+          <span><Image src={logo} style={{ width: '240px', height: '240px'}}/></span>
+        </header>
         {content}
       </div>
     );
