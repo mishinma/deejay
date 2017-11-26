@@ -197,7 +197,7 @@ app.get("/room/create", (request, result, next) => {
         .then(res => {
             result.json({
                 'roomShareableUrl': roomShareableUrl,
-                'seedArtists': topArtists,
+                'seedArtists': topArtists.items.map(artist => artist.id).slice(0,5),
                 'roomId': roomId
         });
     });
