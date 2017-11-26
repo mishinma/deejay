@@ -23,6 +23,15 @@ export const joinRoom = (token, roomUrl) => {
     });
 }
 
+
+export const getAllRoomUsers = (roomId) => {
+    return fetch(`${process.env.REACT_APP_BACKEND_URL}/user?roomid=${roomId}`)
+      .then(res => {
+        return res.json();
+      });
+}
+
+
 export const registerPlayer = (token, spotifyApi, player) => {
   // eslint-disable-next-line
   window.onSpotifyPlayerAPIReady = () => {
@@ -73,8 +82,8 @@ export const readCookie = (name) => {
     var ca = document.cookie.split(';');
     for(var i=0;i < ca.length;i++) {
         var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        while (c.charAt(0) === ' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length,c.length);
     }
     return null;
 }
