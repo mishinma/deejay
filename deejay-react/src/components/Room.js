@@ -3,6 +3,8 @@ import { getRecommendations, getCurrentUserProfile } from '../helpers/spotify';
 import { registerPlayer, createRoom } from '../helpers/utils'
 import TrackList from './TrackList';
 import UserList from './UserList';
+import './Home.css';
+
 // const SpotifyWebApi = require('spotify-web-api-node');
 
 class Room extends Component {
@@ -26,7 +28,7 @@ class Room extends Component {
       .then(json => {
           console.log(json);
           getRecommendations({
-              seed_artists: json.seedArtists.items.map(artist => artist.id).slice(0,5)
+              seed_artists: json.items.map(artist => artist.id).slice(0,5)
           }, this.props.token)
           .then(tracks => {
             this.setState({
@@ -57,8 +59,14 @@ class Room extends Component {
   render() {
     return (
         <div>
+            
+            <p id="empty"></p>
+            <p id="empty"></p>
             <UserList users={this.state.users} />
+            <p id="empty"></p>
+            <p id="empty"></p>
             <TrackList tracks={this.state.recommendations} token={this.props.token} />
+          
         </div>
     );
   }
