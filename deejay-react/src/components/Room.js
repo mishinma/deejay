@@ -45,9 +45,9 @@ class Room extends Component {
   componentDidMount() {
     createRoom(this.props.token)
       .then(json => {
-        //   console.log(json);
+          console.log(json);
           getRecommendations({
-              seed_artists: json.items.map(artist => artist.id).slice(0,5)
+              seed_artists: json.seedArtists.items.map(artist => artist.id).slice(0,5)
           }, this.props.token)
           .then(tracks => {
             this.setState({
@@ -85,7 +85,7 @@ class Room extends Component {
             <p id="empty"></p>
             <p id="empty"></p>
             <TrackList tracks={this.state.recommendations} token={this.props.token} />
-          
+
         </div>
     );
   }
